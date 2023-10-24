@@ -1,0 +1,5 @@
+farm-haystack[inference]  # install only the inference modules- running models for answering questions based on the trained data
+datasets>=2.6.1
+python-dotenv # to use hugging face tokens
+chainlit  # for building conversational AI applications
+pandas
