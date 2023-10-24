@@ -1,7 +1,8 @@
 # RAG Tool - A Haystack, Mistral, and ChainLit-based Question Answering Tool
 
 ![Project Status](https://img.shields.io/badge/status-active-brightgreen.svg)
-
+## Goal:
+The project aims to provide accurate answers to user questions based on the information available in the dataset. 
 A powerful and customizable Question Answering (QA) tool that uses Haystack, Mistral, and ChainLit to extract answers from a dataset.
 
 ## Table of Contents
@@ -45,7 +46,7 @@ Before you get started, ensure you have the following installed:
 1. Clone a repository:
 
    
-   git clone https://github.com/yourusername/rag-tool.git
+   git clone https://github.com/shum05/rag_tool_q-a.git
 
 1. Create a virtual environment and activate it:
 cd rag-tool
@@ -65,9 +66,9 @@ Create a .env file in the project root and dehine Hugging Face API key HF_TOKEN=
 chainlit run app/app.py
 
 ## Usage
-Access the tool by opening your web browser and navigating to http://localhost:5000.
+Access the tool by opening your web browser and navigating to http://localhost:8000.
 
-Enter a question in the input box and click "Submit."
+Enter a question in the input box and click "Submit" icon
 
 View the answers generated based on the dataset.
 
