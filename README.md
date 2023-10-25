@@ -27,6 +27,7 @@ The project is organized as follows:
 
 - `app/`: Contains the main application code.
   - `app.py`: The main application script.
+  - `requirements.txt`: To specify the project's dependencies
 - `data/`: Placeholder for csv dataset file
 - `research.ipynb/`: Documentation files.
 - `examples.txt/`: Example usage scenarios and input/output data.
