@@ -41,13 +41,14 @@ A BM25Retriever is initialized to retrieve relevant documents for a given query.
 A pipeline is created, which integrates the retriever and the prompt node. The retriever fetches relevant documents, and the prompt node generates answers based on the documents and the question.
 
 
-### Specific Challenges Faced:
+## Specific Challenges Faced:
 
 ### Challenge 1: One of the challenges we encountered was dealing with a diverse dataset with varying document structures.
 ### Challenge 2: Managing latency when interacting with the Hugging Face API for model responses.
-How You Addressed Them:
+How we Addressed Them:
 
-### Addressing Challenge 1: To handle the diverse dataset, we implemented custom data preprocessing and cleaning routines to ensure consistent document formats. This involved removing special characters, standardizing headings, and structuring content uniformly.
+### Addressing Challenge 1:
+ To handle the diverse dataset, we implemented custom data preprocessing and cleaning routines to ensure consistent document formats. This involved removing special characters, standardizing headings, and structuring content uniformly.
 ### Addressing Challenge 2: 
 To mitigate latency, we optimized the pipeline by implementing asynchronous processing, allowing for efficient parallel model requests. This ensured that users would receive quick responses to their queries.
 Unique Features or Customizations:
@@ -56,10 +57,12 @@ Unique Features or Customizations:
  We customized the BM25Retriever to optimize document retrieval by fine-tuning the BM25 parameters. This resulted in improved document ranking and retrieval accuracy.
 ### Unique Feature 2: 
 We added a dynamic answer post-processing step to ensure that responses are well-formed, containing complete sentences for a better user experience.
-Preparing a Live Demo:
+
+## Preparing a Live Demo:
 
 We've prepared a live demo to showcase how the RAG tool works. In the demo, we'll take sample questions related to the dataset, and the RAG tool will use the defined pipeline to generate answers based on the documents. We'll also highlight the capabilities to handle a variety of questions, including fact-based, opinion-based, and inferential questions.
-The Impact of the Tool and Potential Applications:
+
+## The Impact of the Tool and Potential Applications:
 
 The RAG tool has a significant impact on improving information retrieval and question-answering across various domains. Its potential applications are vast:
 ### Education: 
